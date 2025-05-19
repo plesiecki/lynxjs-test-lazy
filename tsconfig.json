@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    // "jsxImportSource": "@lynx-js/react", // This one causes errors when using Suspense or Fragment. https://github.com/lynx-family/lynx-stack/issues/848
+
+    "module": "esnext",
+    "moduleResolution": "bundler",
+
+    "strict": true,
+    "isolatedModules": true,
+    "verbatimModuleSyntax": true,
+
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
+  },
+  "include": [
+    "src/**/*",
+    "lynx.config.ts"
+  ],
+  "exclude": ["dist/"],
+}
